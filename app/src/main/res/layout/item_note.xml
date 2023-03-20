@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="12dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple_700"
+        android:padding="16dp"
+        android:id="@+id/someRow"
+        >
+
+
+
+        <TextView
+            android:id="@+id/Titletextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/bodytextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:textColor="@color/teal_700"
+        android:textSize="26dp"
+
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end|bottom"
+        >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:rippleColor="@color/purple_700"
+        android:text="change"
+        />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rippleColor="@color/purple_700"
+            android:text="Delete"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
